@@ -376,3 +376,606 @@ color:#fff;
 border-color:#334155;
 margin:40px 0 20px;
 }
+
+/* ===========================================
+   NAVBAR V2
+=========================================== */
+
+.navbar{
+    padding:18px 0;
+    transition:0.3s;
+}
+
+.navbar-brand{
+    font-size:32px;
+    font-weight:800;
+    letter-spacing:.5px;
+}
+
+.navbar-nav .nav-link{
+    font-weight:600;
+    color:#334155;
+    margin-left:18px;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:var(--primary);
+}
+
+/* ===========================================
+   HERO V2
+=========================================== */
+
+.hero{
+
+    padding:170px 0 120px;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #eef6ff 100%
+    );
+
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    background:#dbeafe;
+
+    color:#2563EB;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    color:#0F172A;
+
+}
+
+.hero .lead{
+
+    font-size:22px;
+
+    color:#64748B;
+
+    max-width:620px;
+
+}
+
+.hero img{
+
+    border-radius:24px;
+
+    box-shadow:0 25px 70px rgba(15,23,42,.15);
+
+}
+
+.hero .btn{
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+}
+
+.hero h3{
+
+    font-size:40px;
+
+    margin-bottom:5px;
+
+}
+
+/* ===========================================
+   RESPONSIVE HERO
+=========================================== */
+
+@media(max-width:991px){
+
+.hero{
+
+text-align:center;
+
+padding:140px 0 80px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero .lead{
+
+font-size:18px;
+
+margin:auto;
+
+}
+
+.hero img{
+
+margin-top:50px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero .btn{
+
+width:100%;
+
+}
+
+}
+
+/* ===========================================
+   STATS V2
+=========================================== */
+
+.stats-section{
+
+background:#0F172A;
+
+padding:90px 0;
+
+}
+
+.stat-card{
+
+background:rgba(255,255,255,.05);
+
+padding:35px 25px;
+
+border-radius:20px;
+
+transition:.35s;
+
+height:100%;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,.09);
+
+}
+
+.stat-card h2{
+
+font-size:54px;
+
+font-weight:800;
+
+color:#3B82F6;
+
+margin-bottom:10px;
+
+}
+
+.stat-card h5{
+
+color:#fff;
+
+margin-bottom:12px;
+
+font-weight:700;
+
+}
+
+.stat-card p{
+
+color:#CBD5E1;
+
+margin:0;
+
+line-height:1.7;
+
+}
+
+/* ===========================================
+   SERVICES V2
+=========================================== */
+
+#services{
+    background:#ffffff;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 30px;
+    border:1px solid #E5E7EB;
+    box-shadow:0 12px 35px rgba(15,23,42,.06);
+    transition:.35s;
+    height:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 55px rgba(37,99,235,.15);
+}
+
+.service-icon{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    background:#DBEAFE;
+    color:#2563EB;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.service-card h4{
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.service-card p{
+    color:#64748B;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.service-card a{
+    text-decoration:none;
+    font-weight:700;
+    color:#2563EB;
+}
+
+.service-card a:hover{
+    color:#1E40AF;
+}
+
+/* ===========================================
+   PROCESS
+=========================================== */
+
+#process{
+
+background:#ffffff;
+
+padding:100px 0;
+
+}
+
+.process-card{
+
+background:#F8FAFC;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+height:100%;
+
+transition:.35s;
+
+border:1px solid #E2E8F0;
+
+}
+
+.process-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 45px rgba(37,99,235,.12);
+
+}
+
+.process-number{
+
+width:70px;
+
+height:70px;
+
+margin:0 auto 25px;
+
+border-radius:50%;
+
+background:#2563EB;
+
+color:#fff;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:26px;
+
+font-weight:800;
+
+}
+
+.process-card h4{
+
+margin-bottom:18px;
+
+font-weight:700;
+
+}
+
+.process-card p{
+
+color:#64748B;
+
+margin:0;
+
+line-height:1.8;
+
+}
+
+/* ===========================================
+   CTA SECTION
+=========================================== */
+
+#cta{
+
+padding:100px 0;
+
+background:#F8FAFC;
+
+}
+
+.cta-box{
+
+background:linear-gradient(135deg,#2563EB,#1E40AF);
+
+border-radius:28px;
+
+padding:80px 60px;
+
+text-align:center;
+
+color:#fff;
+
+box-shadow:0 25px 60px rgba(37,99,235,.25);
+
+}
+
+.cta-box h2{
+
+font-size:48px;
+
+font-weight:800;
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.cta-box p{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:20px;
+
+color:#E2E8F0;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+.cta-box .btn{
+
+padding:16px 34px;
+
+font-weight:700;
+
+border-radius:14px;
+
+}
+
+@media(max-width:768px){
+
+.cta-box{
+
+padding:50px 30px;
+
+}
+
+.cta-box h2{
+
+font-size:34px;
+
+}
+
+.cta-box p{
+
+font-size:18px;
+
+}
+
+}
+
+/* ===========================================
+   CONTACT V2
+=========================================== */
+
+#contact{
+
+padding:100px 0;
+
+background:#ffffff;
+
+}
+
+.contact-info{
+
+background:#0F172A;
+
+color:#fff;
+
+padding:45px;
+
+border-radius:22px;
+
+height:100%;
+
+}
+
+.contact-info h3{
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+color:#CBD5E1;
+
+margin-bottom:30px;
+
+line-height:1.8;
+
+}
+
+.contact-item{
+
+margin-bottom:25px;
+
+padding-bottom:20px;
+
+border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+.contact-form{
+
+background:#F8FAFC;
+
+padding:40px;
+
+border-radius:22px;
+
+box-shadow:0 15px 40px rgba(15,23,42,.08);
+
+}
+
+.contact-form .form-control,
+.contact-form .form-select{
+
+padding:15px;
+
+border-radius:12px;
+
+border:1px solid #D6DFEA;
+
+}
+
+.contact-form .btn{
+
+padding:16px;
+
+font-weight:700;
+
+border-radius:12px;
+
+}
+
+/* ===========================================
+   FOOTER V2
+=========================================== */
+
+.footer{
+
+background:#0F172A;
+
+padding:80px 0 30px;
+
+color:#CBD5E1;
+
+}
+
+.footer h3,
+.footer h5{
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.footer-links{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer-links li{
+
+margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+color:#CBD5E1;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#fff;
+
+padding-left:5px;
+
+}
+
+.footer hr{
+
+margin:40px 0 25px;
+
+border-color:#334155;
+
+}

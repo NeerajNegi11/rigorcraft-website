@@ -1,72 +1,163 @@
+/* ===========================================
+   RIGORWORKS DESIGN SYSTEM
+===========================================*/
+
+:root{
+
+--primary:#2563EB;
+--primary-dark:#1E40AF;
+
+--secondary:#06B6D4;
+
+--dark:#0F172A;
+
+--text:#334155;
+
+--light:#F8FAFC;
+
+--white:#FFFFFF;
+
+--border:#E2E8F0;
+
+--shadow:0 20px 60px rgba(15,23,42,.08);
+
+--radius:18px;
+
+}
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
 }
 
 body{
 
-    font-family:'Inter',sans-serif;
-    color:#0F172A;
-    background:#F8FAFC;
+font-family:'Inter',sans-serif;
+
+background:var(--light);
+
+color:var(--text);
+
+overflow-x:hidden;
+
+line-height:1.7;
 
 }
 
-.navbar{
+section{
 
-    padding:18px 0;
-
-}
-
-.navbar-brand{
-
-    color:#2563EB !important;
-    font-weight:800;
+padding:100px 0;
 
 }
 
-.nav-link{
+.container{
 
-    margin-left:20px;
-    font-weight:500;
-
-}
-
-.hero{
-
-    padding-top:170px;
-    padding-bottom:120px;
+max-width:1250px;
 
 }
 
-.hero h1{
+h1,h2,h3,h4,h5{
 
-    font-size:64px;
-    font-weight:800;
-    line-height:1.1;
+font-weight:800;
 
-}
-
-.hero span{
-
-    color:#2563EB;
-
-}
-
-.hero p{
-
-    margin:30px 0;
-
-    font-size:20px;
-
-    color:#64748B;
+color:var(--dark);
 
 }
 
 .btn-primary{
 
-    padding:15px 35px;
+background:var(--primary);
 
-    border-radius:12px;
+border:none;
+
+padding:16px 36px;
+
+border-radius:14px;
+
+font-weight:600;
+
+transition:.3s;
+
+box-shadow:var(--shadow);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+background:var(--primary-dark);
+
+}
+
+.btn-outline-primary{
+
+border:2px solid var(--primary);
+
+padding:16px 36px;
+
+border-radius:14px;
+
+font-weight:600;
+
+}
+
+img{
+
+max-width:100%;
+
+}
+.hero{
+
+padding-top:180px;
+
+padding-bottom:140px;
+
+background:linear-gradient(
+180deg,
+#ffffff,
+#eef6ff
+);
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+line-height:1.1;
+
+margin-bottom:30px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+color:#64748B;
+
+max-width:600px;
+
+margin-bottom:40px;
+
+}
+
+.badge{
+
+padding:12px 18px;
+
+font-size:14px;
+
+border-radius:50px;
 
 }

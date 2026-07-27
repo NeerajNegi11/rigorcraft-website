@@ -301,3 +301,37 @@ font-size:20px;
 color:#64748B;
 
 }
+
+/* ================= STATS ================= */
+
+.stats-section{
+
+background:#0F172A;
+
+color:#fff;
+
+padding:70px 0;
+
+}
+
+.stats-section h2{
+
+font-size:48px;
+
+font-weight:800;
+
+color:#fff;
+
+margin-bottom:10px;
+
+}
+
+.stats-section p{
+
+font-size:18px;
+
+color:#CBD5E1;
+
+margin:0;
+
+}

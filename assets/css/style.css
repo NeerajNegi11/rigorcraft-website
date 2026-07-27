@@ -335,3 +335,44 @@ color:#CBD5E1;
 margin:0;
 
 }
+
+/* Footer */
+
+.footer{
+background:#0F172A;
+color:#fff;
+padding:70px 0 20px;
+}
+
+.footer h3,
+.footer h5{
+color:#fff;
+margin-bottom:20px;
+}
+
+.footer p{
+color:#CBD5E1;
+}
+
+.footer-links{
+list-style:none;
+padding:0;
+}
+
+.footer-links li{
+margin-bottom:10px;
+}
+
+.footer-links a{
+color:#CBD5E1;
+text-decoration:none;
+}
+
+.footer-links a:hover{
+color:#fff;
+}
+
+.footer hr{
+border-color:#334155;
+margin:40px 0 20px;
+}

@@ -1137,8 +1137,20 @@ img{
 
 }
 
-/* Launch polish fixes */
+/* iOS / Mobile Navbar & CTA Fixes */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1030;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,.08);min-height:88px;}
 .navbar-brand img{max-height:42px;width:auto;}
-.navbar{min-height:88px;}
 .hero{padding-top:170px !important;}
-@media(max-width:768px){.hero{padding-top:140px !important;}}
+#cta{scroll-margin-top:110px;}
+@media (max-width:768px){
+.navbar{min-height:82px;padding:12px 0;}
+.navbar-brand img{max-height:34px;}
+.hero{padding-top:135px !important;}
+.cta-box{margin-top:20px;padding:45px 24px;}
+.cta-box h2{font-size:2.2rem;line-height:1.2;}
+.cta-box .btn{width:100%;margin-bottom:16px;}
+.navbar-collapse{background:#fff;border-radius:16px;margin-top:12px;padding:18px;box-shadow:0 12px 35px rgba(0,0,0,.12);}
+}
+@supports (padding: env(safe-area-inset-top)){
+.navbar{padding-top:env(safe-area-inset-top);}
+}

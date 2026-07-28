@@ -1,0 +1,13 @@
+
+.about-hero{padding:170px 0 100px;background:linear-gradient(180deg,#fff,#eef6ff)}
+.about-hero h1{font-size:3.5rem;font-weight:800;margin:20px 0}
+.about-hero p{font-size:1.2rem;color:#64748b;margin-bottom:30px}
+.about-card{background:#fff;border-radius:20px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.08);height:100%;transition:.3s}
+.about-card:hover{transform:translateY(-8px)}
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:15px}
+.timeline div{background:#2563eb;color:#fff;padding:20px;border-radius:14px;text-align:center;font-weight:700}
+@media(max-width:768px){
+.about-hero{padding:130px 0 70px;text-align:center}
+.about-hero h1{font-size:2.2rem}
+.timeline{grid-template-columns:repeat(2,1fr)}
+}

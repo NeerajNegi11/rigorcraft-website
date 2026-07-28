@@ -930,6 +930,11 @@ padding:80px 0 30px;
 color:#CBD5E1;
 
 }
+.footer-logo{
+    width:170px;
+    height:auto;
+    margin-bottom:20px;
+}
 
 .footer h3,
 .footer h5{
@@ -979,3 +984,161 @@ margin:40px 0 25px;
 border-color:#334155;
 
 }
+
+/* ===== GLOBAL POLISH ===== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    line-height:1.7;
+    text-rendering:optimizeLegibility;
+}
+
+/* Cards */
+
+.service-card,
+.feature-card,
+.process-card,
+.stat-card,
+.contact-form,
+.contact-info{
+    transition:all .35s ease;
+}
+
+.service-card:hover,
+.feature-card:hover,
+.process-card:hover,
+.stat-card:hover,
+.contact-form:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+/* Buttons */
+
+.btn{
+    transition:all .3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(37,99,235,.25);
+}
+
+/* Hero Image */
+
+.hero img{
+    transition:.5s;
+}
+
+.hero img:hover{
+    transform:scale(1.03);
+}
+
+/* Technology */
+
+.tech-item{
+    transition:.3s;
+}
+
+.tech-item:hover{
+    transform:translateY(-6px) scale(1.05);
+}
+
+/* Navigation */
+
+.nav-link{
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0;
+    height:2px;
+    background:#2563eb;
+    transition:.3s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+}
+
+.hero .btn{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.section-title h2{
+    font-size:38px;
+}
+
+.cta-box h2{
+    font-size:34px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    padding-top:120px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+.display-3{
+    font-size:2.5rem;
+}
+
+.contact-info{
+    margin-bottom:30px;
+}
+
+.footer{
+    text-align:center;
+}
+
+.navbar-brand img{
+    width:180px;
+    height:auto;
+}
+
+.btn-lg{
+    width:100%;
+}
+
+}
+
+/* Launch polish fixes */
+.navbar-brand img{max-height:42px;width:auto;}
+.navbar{min-height:88px;}
+.hero{padding-top:170px !important;}
+@media(max-width:768px){.hero{padding-top:140px !important;}}

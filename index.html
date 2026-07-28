@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RigorWorks | Engineering Reliable Digital Products</title>
+<title>RigorWorks | Software Development, AI & QA Engineering</title>
 
 <meta name="description"
 content="Software Development, AI Solutions, Cloud, DevOps, QA Automation and Product Engineering Company">
@@ -21,6 +21,8 @@ content="Software Development, AI Solutions, Cloud, DevOps, QA Automation and Pr
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
@@ -31,18 +33,26 @@ content="Software Development, AI Solutions, Cloud, DevOps, QA Automation and Pr
 
     <div class="container">
 
-        <a class="navbar-brand fw-bold fs-3" href="#">
-            <span class="text-primary">Rigor</span>Works
-        </a>
+        <a class="navbar-brand d-flex align-items-center" href="#">
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+        <img src="assets/images/logo.png"
+         alt="RigorWorks Logo"
+         height="42"
+         class="me-2">
 
-            <span class="navbar-toggler-icon"></span>
+          </a>
 
-        </button>
+       <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+       <span class="navbar-toggler-icon"></span>
+
+       </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
 
@@ -92,7 +102,7 @@ content="Software Development, AI Solutions, Cloud, DevOps, QA Automation and Pr
 
 <div class="row align-items-center gy-5">
 
-<div class="col-lg-6">
+<div class="col-lg-6" data-aos="fade-right">
 
 <span class="hero-badge">
 
@@ -169,10 +179,10 @@ Explore Services
 
 </div>
 
-<div class="col-lg-6 text-center">
+<div class="col-lg-6 text-center" data-aos="fade-left">
 
 <img
-src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+src="assets/images/hero.png"
 class="img-fluid rounded-4 shadow-lg"
 alt="Software Development">
 
@@ -190,7 +200,7 @@ alt="Software Development">
 
 <div class="container">
 
-<div class="row g-4 text-center">
+<div class="row g-4 text-center" data-aos="fade-up">
 
 <div class="col-md-3 col-6">
 
@@ -270,7 +280,7 @@ Helping businesses transform ideas into reliable digital products.
 
 </div>
 
-<div class="row g-4">
+<div class="row g-4" data-aos="fade-up">
 
 <div class="col-lg-4 col-md-6">
 <div class="service-card">
@@ -342,7 +352,7 @@ Helping businesses transform ideas into reliable digital products.
             </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4" data-aos="fade-up">
 
             <div class="col-md-6 col-lg-3">
                 <div class="feature-card text-center">
@@ -397,7 +407,7 @@ Modern technologies for scalable software solutions.
 
 </div>
 
-<div class="tech-grid">
+<div class="tech-grid" data-aos="fade-up">
 
 <span class="tech-item">Java</span>
 <span class="tech-item">Spring Boot</span>
@@ -520,7 +530,7 @@ Testing, deployment, monitoring and continuous improvement.
 
 <div class="container">
 
-<div class="cta-box">
+<div class="cta-box" data-aos="zoom-in">
 
 <h2>Ready to Build Your Next Digital Product?</h2>
 
@@ -563,7 +573,7 @@ Tell us about your project and our team will get back to you shortly.
 
 </div>
 
-<div class="row g-5 align-items-start">
+<div class="row g-5 align-items-start" data-aos="fade-up">
 
 <div class="col-lg-5">
 
@@ -650,7 +660,9 @@ Send Enquiry
 
 <div class="col-lg-4">
 
-<h3><span class="text-primary">Rigor</span>Works</h3>
+<img src="assets/images/logo.png"
+     alt="RigorWorks Logo"
+     class="footer-logo">
 
 <p>
 Engineering reliable digital products through Software Development,
@@ -726,3 +738,24 @@ Quality Engineering, AI Solutions and Cloud technologies.
 </div>
 
 </footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Initialize AOS -->
+<script>
+AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+});
+</script>
+
+<!-- Your JavaScript -->
+<script src="assets/js/app.js?v=1.0"></script>
+
+</body>
+</html>

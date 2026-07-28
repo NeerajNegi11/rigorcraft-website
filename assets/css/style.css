@@ -1154,3 +1154,9 @@ img{
 @supports (padding: env(safe-area-inset-top)){
 .navbar{padding-top:env(safe-area-inset-top);}
 }
+
+html {
+
+    scroll-behavior: smooth;
+
+}

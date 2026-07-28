@@ -1,0 +1,79 @@
+/* ==========================================
+   Hero Section
+========================================== */
+
+.hero {
+    padding: 110px 0;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+
+/* ==========================================
+   Service Cards
+========================================== */
+
+.service-card {
+    height: 100%;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* ==========================================
+   Service Icons
+========================================== */
+
+.icon {
+    margin-bottom: 18px;
+    font-size: 42px;
+    color: #0d6efd;
+}
+
+
+/* ==========================================
+   Call To Action Section
+========================================== */
+
+.cta {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+.footer {
+    padding: 20px 0;
+    color: #ffffff;
+    background: #0d6efd;
+}
+
+
+/* ==========================================
+   Responsive Design
+========================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+}

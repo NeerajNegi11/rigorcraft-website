@@ -1,78 +1,1179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About Us | RigorWorks</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/about.css">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>About Us | RigorWorks</title>
+
+    <!------------------------- SEO Meta Tags ------------------>
+    <meta
+        name="description"
+        content="RigorWorks is a software engineering company providing Software Development, Quality Engineering, QA Automation, AI Solutions, Cloud, and DevOps services."
+    >
+
+    <meta
+        name="keywords"
+        content="Software Development, QA Automation, AI Solutions, DevOps, Cloud, Cypress, Selenium, Playwright, RigorWorks"
+    >
+
+    <meta
+        name="author"
+        content="RigorWorks"
+    >
+
+    <link
+        rel="icon"
+        href="assets/images/favicon.png"
+    >
+
+    <!----------------------Open Graph ------------------------->
+
+    <meta
+        property="og:title"
+        content="RigorWorks"
+    >
+
+    <meta
+        property="og:description"
+        content="Reliable Software Engineering & Quality Engineering Services."
+    >
+
+    <meta
+        property="og:image"
+        content="assets/images/og-image.jpg"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+    <!------------------------ CSS Files ------------------------>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/about.css"
+    >
 </head>
+
 <body>
+
+    <!-- ==========================
+         Navbar
+    =========================== -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-<div class="container">
-<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" height="42"></a>
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-<li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-</ul></div></div></nav>
 
-<header class="about-hero">
-<div class="container">
-<div class="row align-items-center g-5">
-<div class="col-lg-6" data-aos="fade-right">
-<span class="hero-badge">About RigorWorks</span>
-<h1>Engineering Reliable Digital Products Through Innovation.</h1>
-<p>RigorWorks helps startups and enterprises build secure, scalable software through Software Development, QA Engineering, AI and Cloud technologies.</p>
-<a href="index.html#contact" class="btn btn-primary btn-lg">Start Your Project</a>
-</div>
-<div class="col-lg-6 text-center" data-aos="fade-left">
-<img src="assets/images/hero.png" class="img-fluid rounded-4 shadow">
-</div></div></div></header>
+    <div class="container">
 
-<section class="py-5"><div class="container">
-<div class="section-title"><h2>Our Story</h2></div>
-<p class="lead text-center">We build software with an engineering-first mindset focused on quality, transparency, scalability and long-term partnerships.</p>
-<div class="row g-4 mt-4">
-<div class="col-md-6"><div class="about-card"><h3>Mission</h3><p>Deliver world-class digital solutions that accelerate business growth.</p></div></div>
-<div class="col-md-6"><div class="about-card"><h3>Vision</h3><p>Become a globally trusted engineering company known for innovation and quality.</p></div></div>
-</div>
-</div></section>
+        <a class="navbar-brand d-flex align-items-center" href="#">
 
-<section class="bg-light py-5"><div class="container">
-<div class="section-title"><h2>Core Values</h2></div>
-<div class="row g-4">
-<div class="col-md-4"><div class="about-card"><h4>Quality First</h4></div></div>
-<div class="col-md-4"><div class="about-card"><h4>Innovation</h4></div></div>
-<div class="col-md-4"><div class="about-card"><h4>Customer Success</h4></div></div>
-<div class="col-md-4"><div class="about-card"><h4>Transparency</h4></div></div>
-<div class="col-md-4"><div class="about-card"><h4>Security</h4></div></div>
-<div class="col-md-4"><div class="about-card"><h4>Continuous Learning</h4></div></div>
-</div></div></section>
+        <img src="assets/images/logo.png"
+         alt="RigorWorks Logo"
+         height="42"
+         class="me-2">
 
-<section class="py-5"><div class="container">
-<div class="section-title"><h2>Engineering Journey</h2></div>
-<div class="timeline">
-<div>Discovery</div><div>Design</div><div>Development</div><div>Testing</div><div>Deployment</div><div>Support</div>
-</div>
-</div></section>
+          </a>
 
-<section id="cta"><div class="container"><div class="cta-box text-center">
-<h2>Ready to Build with RigorWorks?</h2>
-<p>Let's discuss your next software project.</p>
-<a href="index.html#contact" class="btn btn-light btn-lg">Contact Us</a>
-</div></div></section>
+       <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
 
-<footer class="footer"><div class="container text-center">
-<img src="assets/images/logo.png" class="footer-logo"><p>© 2026 RigorWorks</p>
-</div></footer>
+       <span class="navbar-toggler-icon"></span>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init({duration:800,once:true});</script>
-</body></html>
+       </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+
+    <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="why-us.html">Why Us</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="technologies.html">Technologies</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+
+</ul>
+
+        </div>
+
+    </div>
+
+</nav>
+    
+
+    <!-- ==========================
+         Hero Section
+    =========================== -->
+
+    <header class="about-hero">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div
+                    class="col-lg-6"
+                    data-aos="fade-right"
+                >
+
+                    <span class="hero-badge">
+                        About RigorWorks
+                    </span>
+
+                    <h1>
+                        Engineering Reliable Digital Products Through Innovation.
+                    </h1>
+
+                    <p>
+                        RigorWorks helps startups and enterprises build secure,
+                        scalable software through Software Development,
+                        QA Engineering, AI and Cloud technologies.
+                    </p>
+
+                    <a
+                        href="index.html#contact"
+                        class="btn btn-primary btn-lg"
+                    >
+                        Start Your Project
+                    </a>
+                    <div class="hero-features mt-4">
+
+                        <span>
+                            <i class="fas fa-check-circle"></i>
+                            Software Development
+                        </span>
+
+                        <span>
+                            <i class="fas fa-check-circle"></i>
+                            Quality Engineering
+                        </span>
+
+                        <span>
+                            <i class="fas fa-check-circle"></i>
+                            Cloud & DevOps
+                        </span>
+
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-6 text-center"
+                    data-aos="fade-left"
+                >
+
+                    <img
+                        src="assets/images/hero.png"
+                        class="img-fluid rounded-4 shadow"
+                        alt="About RigorWorks"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ==========================
+     Company Overview
+========================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div
+                class="col-lg-6"
+                data-aos="fade-right"
+            >
+
+                <span class="section-subtitle">
+                    WHO WE ARE
+                </span>
+
+                <h2 class="mb-4">
+                    Building Software That Powers Business Growth
+                </h2>
+
+                <p class="lead">
+
+                    RigorWorks is a software engineering company dedicated to
+                    delivering reliable, scalable, and high-quality digital
+                    solutions. We help startups, growing businesses, and
+                    enterprises transform ideas into secure software products
+                    through modern engineering practices.
+
+                </p>
+
+                <p>
+
+                    Our expertise spans custom software development,
+                    quality engineering, test automation, cloud technologies,
+                    DevOps, and AI-driven solutions. Every project is built
+                    with a strong focus on performance, maintainability,
+                    security, and long-term business value.
+
+                </p>
+
+                <a
+                    href="services.html"
+                    class="btn btn-primary mt-3"
+                >
+                    Explore Our Services
+                </a>
+
+            </div>
+
+            <div
+                class="col-lg-6"
+                data-aos="fade-left"
+            >
+
+                <div class="overview-box">
+
+                    <div class="overview-item">
+
+                        <i class="fas fa-laptop-code"></i>
+
+                        <div>
+
+                            <h5>Software Engineering</h5>
+
+                            <p>
+                                Modern web, enterprise, and cloud applications.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="overview-item">
+
+                        <i class="fas fa-vial"></i>
+
+                        <div>
+
+                            <h5>Quality Engineering</h5>
+
+                            <p>
+                                Manual testing, automation, API, and performance testing.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="overview-item">
+
+                        <i class="fas fa-cloud"></i>
+
+                        <div>
+
+                            <h5>Cloud & DevOps</h5>
+
+                            <p>
+                                CI/CD, cloud infrastructure, deployment, and monitoring.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="overview-item">
+
+                        <i class="fas fa-brain"></i>
+
+                        <div>
+
+                            <h5>AI Solutions</h5>
+
+                            <p>
+                                Intelligent automation and AI-powered applications.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ==========================
+         Our Story
+    =========================== -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Our Story</h2>
+            </div>
+
+            <p class="lead text-center">
+                We build software with an engineering-first mindset focused on
+                quality, transparency, scalability and long-term partnerships.
+            </p>
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-md-6">
+
+                    <div class="about-card">
+
+                        <h3>Mission</h3>
+
+                        <p>
+                            Deliver world-class digital solutions that accelerate
+                            business growth.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="about-card">
+
+                        <h3>Vision</h3>
+
+                        <p>
+                            Become a globally trusted engineering company known
+                            for innovation and quality.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         Core Values
+    =========================== -->
+
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Core Values</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4"><div class="about-card"><h4>Quality First</h4></div></div>
+                <div class="col-md-4"><div class="about-card"><h4>Innovation</h4></div></div>
+                <div class="col-md-4"><div class="about-card"><h4>Customer Success</h4></div></div>
+                <div class="col-md-4"><div class="about-card"><h4>Transparency</h4></div></div>
+                <div class="col-md-4"><div class="about-card"><h4>Security</h4></div></div>
+                <div class="col-md-4"><div class="about-card"><h4>Continuous Learning</h4></div></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+     Why Choose RigorWorks
+========================== -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5">
+
+            <span class="section-subtitle">
+                WHY CHOOSE US
+            </span>
+
+            <h2>
+                Delivering Reliable Engineering Solutions
+            </h2>
+
+            <p class="lead">
+                We combine engineering expertise, quality-focused development,
+                and modern technologies to help businesses build software with confidence.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                
+
+                <div class="about-card text-center h-100">
+
+                    <i class="fas fa-award choose-icon"></i>
+
+                    <h4>Engineering Excellence</h4>
+
+                    <p>
+                        We follow modern software engineering practices to
+                        deliver scalable, maintainable, and reliable applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="about-card text-center h-100">
+
+                    <i class="fas fa-shield-halved choose-icon"></i>
+
+                    <h4>Quality First</h4>
+
+                    <p>
+                        Quality is integrated into every stage of development,
+                        ensuring secure, stable, and high-performing solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="about-card text-center h-100">
+
+                    <i class="fas fa-arrows-rotate choose-icon"></i>
+
+                    <h4>Agile Delivery</h4>
+
+                    <p>
+                        We work with agile methodologies to deliver software
+                        faster while adapting to evolving business needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="about-card text-center h-100">
+
+                    <i class="fas fa-handshake-angle choose-icon"></i>
+
+                    <h4>Long-Term Partnership</h4>
+
+                    <p>
+                        We believe in building lasting relationships through
+                        transparency, collaboration, and continuous support.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     Technology Expertise
+========================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5">
+
+            <span class="section-subtitle">
+                TECHNOLOGY EXPERTISE
+            </span>
+
+            <h2>
+                Modern Technologies We Work With
+            </h2>
+
+            <p class="lead">
+                We leverage industry-leading technologies and frameworks to
+                build secure, scalable, and future-ready software solutions.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Frontend -->
+
+            <div class="col-md-6 col-lg-3"  data-aos="fade-up">
+
+                <div class="tech-card">
+
+                    <i class="fab fa-html5"></i>
+
+                    <h5>Frontend</h5>
+
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>React</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Backend -->
+
+            <div class="col-md-6 col-lg-3"  data-aos="fade-up">
+
+                <div class="tech-card">
+
+                    <i class="fas fa-server"></i>
+
+                    <h5>Backend</h5>
+
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>Node.js</li>
+                        <li>REST APIs</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- QA -->
+
+            <div class="col-md-6 col-lg-3"  data-aos="fade-up">
+
+                <div class="tech-card">
+
+                    <i class="fas fa-vial"></i>
+
+                    <h5>Quality Engineering</h5>
+
+                    <ul>
+                        <li>Cypress</li>
+                        <li>Selenium</li>
+                        <li>Playwright</li>
+                        <li>API Testing</li>
+                        <li>Performance Testing</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- DevOps -->
+
+            <div class="col-md-6 col-lg-3"  data-aos="fade-up">
+
+                <div class="tech-card">
+
+                    <i class="fas fa-cloud"></i>
+
+                    <h5>Cloud & DevOps</h5>
+
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Docker</li>
+                        <li>Jenkins</li>
+                        <li>AWS</li>
+                        <li>Azure</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     Industries We Serve
+========================== -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5">
+
+            <span class="section-subtitle">
+                INDUSTRIES WE SERVE
+            </span>
+
+            <h2>
+                Engineering Solutions Across Industries
+            </h2>
+
+            <p class="lead">
+                We develop scalable software solutions tailored to the unique
+                challenges of businesses across multiple industries.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-heartbeat"></i>
+
+                    <h5>Healthcare</h5>
+
+                    <p>
+                        Secure healthcare applications, patient management,
+                        and digital health platforms.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-building-columns"></i>
+
+                    <h5>Banking & Finance</h5>
+
+                    <p>
+                        Reliable financial software, payment systems,
+                        and secure digital platforms.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-cart-shopping"></i>
+
+                    <h5>Retail & E-commerce</h5>
+
+                    <p>
+                        Modern commerce platforms designed to improve
+                        customer experience and business growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-industry"></i>
+
+                    <h5>Manufacturing</h5>
+
+                    <p>
+                        Software solutions that optimize operations,
+                        production workflows, and reporting.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-graduation-cap"></i>
+
+                    <h5>Education</h5>
+
+                    <p>
+                        Learning platforms, education management,
+                        and digital collaboration tools.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-truck-fast"></i>
+
+                    <h5>Logistics</h5>
+
+                    <p>
+                        Fleet management, tracking systems,
+                        and supply chain automation.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-plane"></i>
+
+                    <h5>Travel & Hospitality</h5>
+
+                    <p>
+                        Booking systems, travel applications,
+                        and hospitality management solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+
+                <div class="industry-card">
+
+                    <i class="fas fa-lightbulb"></i>
+
+                    <h5>Technology Startups</h5>
+
+                    <p>
+                        MVP development, rapid product engineering,
+                        and scalable cloud-based applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ==========================
+         Engineering Journey
+    =========================== -->
+
+    <!-- ==========================
+     Engineering Journey
+========================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5">
+
+            <span class="section-subtitle">
+                OUR PROCESS
+            </span>
+
+            <h2>
+                Engineering Journey
+            </h2>
+
+            <p class="lead">
+                Every successful project follows a structured engineering
+                process that ensures quality, transparency, and predictable
+                delivery.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4"  data-aos="fade-up">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <h4>Discovery</h4>
+
+                    <p>
+                        We understand your business goals, users,
+                        and technical requirements before writing code.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4"  data-aos="fade-up">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+
+                    <h4>Planning</h4>
+
+                    <p>
+                        Define architecture, technology stack,
+                        milestones, and delivery roadmap.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4"  data-aos="fade-up">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <i class="fas fa-pen-ruler"></i>
+                    </div>
+
+                    <h4>Design</h4>
+
+                    <p>
+                        Create intuitive user experiences,
+                        scalable system designs,
+                        and technical specifications.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4"  data-aos="fade-up">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+                    <h4>Development</h4>
+
+                    <p>
+                        Build secure, maintainable,
+                        and high-performance software
+                        using modern technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4"  data-aos="fade-up">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+
+                    <h4>Quality Assurance</h4>
+
+                    <p>
+                        Manual testing, automation,
+                        API validation, and performance
+                        testing ensure product reliability.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4"  data-aos="fade-up">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+
+                    <h4>Deployment & Support</h4>
+
+                    <p>
+                        Launch confidently and provide
+                        continuous monitoring, maintenance,
+                        and future enhancements.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ==========================
+         CTA
+    =========================== -->
+
+    <section id="cta">
+
+        <div class="container">
+
+            <div class="cta-box text-center">
+
+                <h2>Ready to Build with RigorWorks?</h2>
+
+                <p>
+                    Let's discuss your next software project.
+                </p>
+
+                <a
+                    href="index.html#contact"
+                    class="btn btn-light btn-lg"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         Footer
+    =========================== -->
+<!-- ==========================
+     Footer
+========================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+ <!----------------- Company -------------------->
+
+            <div class="col-lg-4">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="RigorWorks"
+                    class="footer-logo mb-3"
+                >
+
+                <p>
+
+                    RigorWorks is a software engineering company delivering
+                    modern digital solutions through Software Development,
+                    Quality Engineering, Cloud, DevOps, and AI technologies.
+
+                </p>
+                <!-------------- Social Icons ------------->
+
+                    <div class="social-icons">
+
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-2">
+
+                <h5>Company</h5>
+
+                <ul class="footer-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+
+            <div class="col-lg-3">
+
+                <h5>Services</h5>
+
+                <ul class="footer-links">
+
+                    <li>Software Development</li>
+
+                    <li>QA Automation</li>
+
+                    <li>Cloud & DevOps</li>
+
+                    <li>AI Solutions</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="col-lg-3">
+
+                <h5>Contact</h5>
+
+                <p>
+
+                    Ready to build your next software product?
+
+                </p>
+
+                <a
+                    href="contact.html"
+                    class="btn btn-primary btn-sm"
+                >
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr class="my-4">
+
+        <div
+            class="d-flex flex-column flex-md-row
+                   justify-content-between
+                   align-items-center"
+        >
+
+            <p class="mb-2 mb-md-0">
+
+                © 2026 RigorWorks.
+                All Rights Reserved.
+
+            </p>
+
+            <div>
+
+                <a href="privacy.html">Privacy Policy</a>
+
+                |
+
+                <a href="terms.html">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+    
+
+
+    <!-- ==========================
+         script
+    =========================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

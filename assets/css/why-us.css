@@ -1,0 +1,125 @@
+/* ==========================================
+   Why Us Hero Section
+========================================== */
+
+.whyus-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 170px 0 100px;
+    background: linear-gradient(180deg, #ffffff, #eef6ff);
+}
+
+.whyus-hero::before {
+    content: "";
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, .08);
+    position: absolute;
+    top: -120px;
+    right: -120px;
+}
+
+.whyus-hero h1 {
+    margin: 20px 0;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.whyus-hero p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+@media (max-width: 768px) {
+
+    .whyus-hero {
+        padding: 130px 0 70px;
+        text-align: center;
+    }
+
+    .whyus-hero h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+/* ==========================================
+   Comparison Table
+========================================== */
+
+.compare-wrap {
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+}
+
+.compare-table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.compare-table th {
+    padding: 22px 28px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #fff;
+    background: #0F172A;
+    text-align: left;
+}
+
+.compare-table th:first-child {
+    width: 26%;
+}
+
+.compare-table td {
+    padding: 22px 28px;
+    border-bottom: 1px solid #eef2f7;
+    vertical-align: top;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.compare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.compare-table td:first-child {
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.compare-table .cell-no i {
+    color: #EF4444;
+    margin-right: 10px;
+}
+
+.compare-table .cell-yes i {
+    color: #16A34A;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .compare-table th,
+    .compare-table td {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+}
+
+/* ==========================================
+   Commitment Cards (reuses .feature-card / .icon-circle)
+========================================== */
+
+.commitment-icon {
+    font-size: 30px;
+}

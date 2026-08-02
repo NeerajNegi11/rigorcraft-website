@@ -1,3 +1,4 @@
+
 /* ==========================================
    Hero Section
 ========================================== */
@@ -14,66 +15,954 @@
 
 
 /* ==========================================
-   Service Cards
+   Hero Features
+========================================== */
+
+.hero .lead {
+
+    margin: 25px 0;
+
+    font-size: 1.15rem;
+
+    color: rgba(255,255,255,.9);
+
+}
+
+.hero-features {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+}
+
+.hero-features span {
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+}
+
+.hero-features i {
+
+    margin-right: 8px;
+
+    color: #ffffff;
+
+}
+
+/* ==========================================
+   Section Title
+========================================== */
+
+/* ===================================
+   Services Overview
+=================================== */
+
+.services-overview {
+
+    padding: 100px 0;
+
+}
+
+.section-subtitle {
+
+    display: inline-block;
+
+    color: #0d6efd;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+}
+
+.section-title {
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+}
+
+.section-title h2 {
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #212529;
+
+    margin-bottom: 20px;
+
+}
+
+.section-title p {
+
+    font-size: 18px;
+
+    color: #6c757d;
+
+    line-height: 1.8;
+
+    margin-bottom: 0;
+
+}
+
+/* ==========================================
+   Core Services
 ========================================== */
 
 .service-card {
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    padding: 35px 30px;
+
     height: 100%;
-    padding: 28px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
     transition: all 0.3s ease;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+.service-card h4 {
+
+    margin: 20px 0 15px;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: #212529;
+
+}
+
+.service-card p {
+
+    color: #6c757d;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
 }
 
 .service-card:hover {
-    transform: translateY(-6px);
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+
 }
 
+.service-list {
 
-/* ==========================================
-   Service Icons
-========================================== */
+    margin: 20px 0;
+
+    padding-left: 20px;
+
+}
+
+.service-list li {
+
+    margin-bottom: 10px;
+
+    color: #495057;
+
+}
+
+.service-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: 600;
+
+    color: #0d6efd;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+}
+
+.service-link:hover {
+
+    color: #0a58ca;
+
+    gap: 12px;
+
+}
 
 .icon {
-    margin-bottom: 18px;
-    font-size: 42px;
+
+    font-size: 48px;
+
     color: #0d6efd;
+
 }
 
+/* ==========================================
+   Technology Stack
+========================================== */
+
+.technology {
+
+    padding: 100px 0;
+
+}
+
+.tech-card {
+
+}
+
+.tech-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+
+}
+
+.tech-card .icon {
+
+    font-size: 48px;
+
+    color: #0d6efd;
+
+    margin-bottom: 20px;
+
+}
+
+.tech-card h4 {
+
+    margin-bottom: 25px;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: #212529;
+
+}
+
+.tech-badges {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+.tech-badges span {
+
+    padding: 8px 14px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #0d6efd;
+
+    background: #eaf2ff;
+
+    border-radius: 30px;
+
+}
+/* ==========================================
+   Development Process
+========================================== */
+
+.process {
+
+    padding: 100px 0;
+
+}
+
+.process-card {
+
+}
+
+.process-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+
+}
+
+.process-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    color: #0d6efd;
+
+    background: #eaf2ff;
+
+    border-radius: 50%;
+
+}
+
+.process-card h4 {
+
+    margin-bottom: 15px;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: #212529;
+
+}
+
+.process-card p {
+
+    margin-bottom: 0;
+
+    color: #6c757d;
+
+    line-height: 1.8;
+
+}
 
 /* ==========================================
-   Call To Action Section
+   Why Choose RigorWorks
+========================================== */
+
+.why-choose {
+
+    padding: 100px 0;
+
+}
+
+.choose-card {
+
+}
+
+.choose-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+
+}
+
+.choose-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    color: #0d6efd;
+
+    background: #eaf2ff;
+
+    border-radius: 50%;
+
+}
+
+.choose-card h4 {
+
+    margin-bottom: 15px;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: #212529;
+
+}
+
+.choose-card p {
+
+    margin-bottom: 0;
+
+    color: #6c757d;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================
+   Engagement Models
+========================================== */
+
+.engagement {
+
+    padding: 100px 0;
+
+}
+
+.engagement-card {
+
+}
+
+.engagement-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+
+}
+
+.engagement-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    color: #0d6efd;
+
+    background: #eaf2ff;
+
+    border-radius: 50%;
+
+}
+
+.engagement-card h4 {
+
+    margin-bottom: 15px;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: #212529;
+
+}
+
+.engagement-card p {
+
+    margin-bottom: 0;
+
+    color: #6c757d;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================
+   Industries We Serve
+========================================== */
+
+.industries {
+
+    padding: 100px 0;
+
+}
+
+.industry-card {
+
+}
+
+.industry-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+
+}
+
+.industry-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    color: #0d6efd;
+
+    background: #eaf2ff;
+
+    border-radius: 50%;
+
+}
+
+.industry-card h4 {
+
+    margin-bottom: 15px;
+
+    font-size: 1.35rem;
+
+    font-weight: 700;
+
+    color: #212529;
+
+}
+
+.industry-card p {
+
+    margin-bottom: 0;
+
+    color: #6c757d;
+
+    line-height: 1.8;
+
+}
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq {
+
+    padding: 100px 0;
+
+}
+
+.accordion-item {
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    border: none;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+.accordion-button {
+
+    padding: 22px 25px;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    color: #212529;
+
+    background: #ffffff;
+
+    box-shadow: none;
+
+}
+
+.accordion-button:not(.collapsed) {
+
+    color: #0d6efd;
+
+    background: #eef5ff;
+
+    box-shadow: none;
+
+}
+
+.accordion-button:focus {
+
+    border-color: transparent;
+
+    box-shadow: none;
+
+}
+
+.accordion-body {
+
+    padding: 25px;
+
+    color: #6c757d;
+
+    line-height: 1.8;
+
+}
+/* ==========================================
+   Call To Action
 ========================================== */
 
 .cta {
-    padding: 80px 0;
-    background: #f8f9fa;
+
+    padding: 100px 0;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+
 }
 
+.cta h2 {
 
+    margin-bottom: 20px;
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+}
+
+.cta p {
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.9);
+
+}
+
+.cta-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.cta .btn {
+
+    padding: 14px 32px;
+
+    font-weight: 600;
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+
+}
+
+.cta .btn:hover {
+
+    transform: translateY(-3px);
+
+}
 /* ==========================================
    Footer
 ========================================== */
 
 .footer {
-    padding: 20px 0;
+
+    padding: 70px 0 20px;
+
     color: #ffffff;
-    background: #0d6efd;
+
+    background: #0f172a;
+
 }
 
+.footer-logo {
+
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+}
+
+.footer h5 {
+
+    margin-bottom: 20px;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+}
+
+.footer p {
+
+    color: rgba(255,255,255,0.75);
+
+    line-height: 1.8;
+
+}
+
+.footer-links {
+
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+
+}
+
+.footer-links li {
+
+    margin-bottom: 12px;
+
+}
+
+.footer-links a {
+
+    color: rgba(255,255,255,0.75);
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+}
+
+.footer-links a:hover {
+
+    color: #ffffff;
+
+    padding-left: 6px;
+
+}
+
+.footer hr {
+
+    margin: 40px 0 20px;
+
+    border-color: rgba(255,255,255,0.15);
+
+}
+
+.footer .text-center p {
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.6);
+
+}
+/* ==========================================
+   Shared Card Styles
+========================================== */
+
+.service-card,
+.tech-card,
+.process-card,
+.choose-card,
+.engagement-card,
+.industry-card {
+
+}
+
+.service-card:hover,
+.tech-card:hover,
+.process-card:hover,
+.choose-card:hover,
+.engagement-card:hover,
+.industry-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+
+}
 
 /* ==========================================
    Responsive Design
 ========================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 
     .hero {
-        padding: 80px 0;
+
+        padding: 140px 0 80px;
+
+        text-align: center;
+
     }
 
     .hero h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .hero .lead {
+
+        margin: 25px auto;
+
+    }
+
+    .hero-features {
+
+        justify-content: center;
+
+    }
+
+    .hero img {
+
+        margin-top: 50px;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .cta h2 {
+
+        font-size: 2rem;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        padding: 120px 0 70px;
+
+    }
+
+    .hero h1 {
+
         font-size: 2.2rem;
+
+    }
+
+    .hero-features {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 12px;
+
+    }
+
+    .service-card,
+    .tech-card,
+    .process-card,
+    .choose-card,
+    .engagement-card,
+    .industry-card {
+
+        padding: 28px 24px;
+
+    }
+
+    .process-icon,
+    .choose-icon,
+    .engagement-icon,
+    .industry-icon {
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 28px;
+
+    }
+
+    .cta-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .cta .btn {
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+
+        font-size: 1.9rem;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 1.75rem;
+
+    }
+
+    .section-title p {
+
+        font-size: 1rem;
+
+    }
+
+    .footer {
+
+        text-align: center;
+
+    }
+
+    .footer-links {
+
+        margin-bottom: 30px;
+
     }
 
 }

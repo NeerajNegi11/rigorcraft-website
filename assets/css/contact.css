@@ -1,0 +1,132 @@
+/* ==========================================
+   Contact Hero Section
+========================================== */
+
+.contact-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 170px 0 90px;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff, #eef6ff);
+}
+
+.contact-hero::before {
+    content: "";
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, .08);
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-hero h1 {
+    margin: 20px 0;
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.contact-hero p {
+    margin: 0 auto 10px;
+    max-width: 640px;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.contact-hero .hero-features {
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .contact-hero {
+        padding: 130px 0 60px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+/* ==========================================
+   Contact Item Icons
+========================================== */
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #60A5FA;
+    margin-top: 4px;
+}
+
+.contact-info .social-icons {
+    margin-top: 10px;
+}
+
+/* ==========================================
+   FAQ Accordion (brand-matched)
+========================================== */
+
+.contact-faq .accordion-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px !important;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.contact-faq .accordion-button {
+    padding: 22px 26px;
+    font-weight: 700;
+    color: #0F172A;
+    background: #ffffff;
+}
+
+.contact-faq .accordion-button:not(.collapsed) {
+    color: #2563EB;
+    background: #eef6ff;
+    box-shadow: none;
+}
+
+.contact-faq .accordion-button:focus {
+    box-shadow: none;
+    border-color: #e2e8f0;
+}
+
+.contact-faq .accordion-body {
+    padding: 4px 26px 26px;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   Direct Email Strip
+========================================== */
+
+.direct-email {
+    text-align: center;
+    padding: 50px 0 10px;
+}
+
+.direct-email p {
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.direct-email a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.direct-email a:hover {
+    color: #1E40AF;
+}

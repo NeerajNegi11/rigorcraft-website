@@ -1,0 +1,81 @@
+/* ==========================================
+   Technologies Hero Section
+========================================== */
+
+.tech-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 170px 0 100px;
+    background: linear-gradient(180deg, #ffffff, #eef6ff);
+}
+
+.tech-hero::before {
+    content: "";
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, .08);
+    position: absolute;
+    top: -120px;
+    right: -120px;
+}
+
+.tech-hero h1 {
+    margin: 20px 0;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.tech-hero p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+@media (max-width: 768px) {
+
+    .tech-hero {
+        padding: 130px 0 70px;
+        text-align: center;
+    }
+
+    .tech-hero h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+/* ==========================================
+   FAQ Accordion (brand-matched)
+========================================== */
+
+.tech-faq .accordion-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px !important;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.tech-faq .accordion-button {
+    padding: 22px 26px;
+    font-weight: 700;
+    color: #0F172A;
+    background: #ffffff;
+}
+
+.tech-faq .accordion-button:not(.collapsed) {
+    color: #2563EB;
+    background: #eef6ff;
+    box-shadow: none;
+}
+
+.tech-faq .accordion-button:focus {
+    box-shadow: none;
+    border-color: #e2e8f0;
+}
+
+.tech-faq .accordion-body {
+    padding: 4px 26px 26px;
+    color: #64748b;
+    line-height: 1.8;
+}

@@ -277,16 +277,16 @@
 
                 <div class="contact-form">
 
-                    <form>
+                    <form data-contact-form>
 
                         <div class="row">
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control mb-3" placeholder="Full Name" required>
+                                <input type="text" name="name" class="form-control mb-3" placeholder="Full Name" required>
                             </div>
 
                             <div class="col-md-6">
-                                <input type="email" class="form-control mb-3" placeholder="Business Email" required>
+                                <input type="email" name="email" class="form-control mb-3" placeholder="Business Email" required>
                             </div>
 
                         </div>
@@ -294,11 +294,11 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control mb-3" placeholder="Company">
+                                <input type="text" name="company" class="form-control mb-3" placeholder="Company">
                             </div>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control mb-3" placeholder="Phone Number">
+                                <input type="text" name="phone" class="form-control mb-3" placeholder="Phone Number">
                             </div>
 
                         </div>
@@ -306,7 +306,7 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <select class="form-select mb-3">
+                                <select name="service" class="form-select mb-3">
                                     <option selected disabled>Service Interested In</option>
                                     <option>Software Development</option>
                                     <option>QA Automation</option>
@@ -317,7 +317,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <select class="form-select mb-3">
+                                <select name="budget" class="form-select mb-3">
                                     <option selected disabled>Estimated Budget</option>
                                     <option>Under $5,000</option>
                                     <option>$5,000 – $15,000</option>
@@ -329,13 +329,15 @@
 
                         </div>
 
-                        <textarea class="form-control mb-4"
+                        <textarea name="message" class="form-control mb-4"
                         rows="6"
-                        placeholder="Tell us about your project"></textarea>
+                        placeholder="Tell us about your project" required></textarea>
 
                         <button class="btn btn-primary btn-lg w-100" type="submit">
                             Send Enquiry
                         </button>
+
+                        <div data-form-status class="form-status"></div>
 
                     </form>
 
@@ -690,6 +692,9 @@
             once: true
         });
     </script>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 
 </body>
 

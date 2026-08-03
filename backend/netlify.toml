@@ -1,0 +1,8 @@
+[build]
+  command = "npm run prisma:generate"
+  functions = "netlify/functions"
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["prisma/schema.prisma"]

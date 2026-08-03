@@ -1160,3 +1160,7 @@ html {
     scroll-behavior: smooth;
 
 }
+
+.form-status{margin-top:12px;font-weight:500;}
+.form-status-success{color:#198754;}
+.form-status-error{color:#dc3545;}

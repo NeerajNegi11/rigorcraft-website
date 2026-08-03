@@ -614,17 +614,17 @@ Monday – Friday<br>
 
 <div class="contact-form">
 
-<form>
+<form data-contact-form>
 
-<input type="text" class="form-control mb-3" placeholder="Full Name" required>
+<input type="text" name="name" class="form-control mb-3" placeholder="Full Name" required>
 
-<input type="email" class="form-control mb-3" placeholder="Business Email" required>
+<input type="email" name="email" class="form-control mb-3" placeholder="Business Email" required>
 
-<input type="text" class="form-control mb-3" placeholder="Company">
+<input type="text" name="company" class="form-control mb-3" placeholder="Company">
 
-<input type="text" class="form-control mb-3" placeholder="Phone Number">
+<input type="text" name="phone" class="form-control mb-3" placeholder="Phone Number">
 
-<select class="form-select mb-3">
+<select name="service" class="form-select mb-3">
 
 <option>Software Development</option>
 <option>QA Automation</option>
@@ -634,15 +634,17 @@ Monday – Friday<br>
 
 </select>
 
-<textarea class="form-control mb-4"
+<textarea name="message" class="form-control mb-4"
 rows="6"
-placeholder="Tell us about your project"></textarea>
+placeholder="Tell us about your project" required></textarea>
 
-<button class="btn btn-primary btn-lg w-100">
+<button type="submit" class="btn btn-primary btn-lg w-100">
 
 Send Enquiry
 
 </button>
+
+<div data-form-status class="form-status"></div>
 
 </form>
 
@@ -771,6 +773,8 @@ AOS.init({
 
 <!-- Your JavaScript -->
 <script src="assets/js/app.js?v=1.0"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/contact-form.js"></script>
 
 </body>
 </html>

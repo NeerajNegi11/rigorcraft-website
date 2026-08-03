@@ -2,6 +2,8 @@ const { z } = require("zod");
 const { prisma } = require("../../lib/db");
 const { notify, escapeHtml } = require("../../lib/email");
 const { jsonResponse, handlePreflight } = require("../../lib/cors");
+const { verifyTurnstile } = require("../../lib/turnstile");
+const { getClientIp, isRateLimited } = require("../../lib/rate-limit");
 
 const ContactSchema = z.object({
   name: z.string().trim().min(1).max(200),
@@ -10,6 +12,7 @@ const ContactSchema = z.object({
   phone: z.string().trim().max(50).optional().or(z.literal("")),
   service: z.string().trim().max(100).optional().or(z.literal("")),
   message: z.string().trim().min(1).max(5000),
+  turnstileToken: z.string().min(1),
 });
 
 exports.handler = async (event) => {
@@ -27,6 +30,17 @@ exports.handler = async (event) => {
     return jsonResponse(event, 400, { error: "Invalid submission", details: err.errors });
   }
 
+  const ipAddress = getClientIp(event);
+
+  const humanVerified = await verifyTurnstile(payload.turnstileToken, ipAddress);
+  if (!humanVerified) {
+    return jsonResponse(event, 400, { error: "Captcha verification failed. Please try again." });
+  }
+
+  if (await isRateLimited(prisma.lead, ipAddress)) {
+    return jsonResponse(event, 429, { error: "Too many submissions. Please try again later." });
+  }
+
   const lead = await prisma.lead.create({
     data: {
       name: payload.name,
@@ -35,6 +49,7 @@ exports.handler = async (event) => {
       phone: payload.phone || null,
       service: payload.service || null,
       message: payload.message,
+      ipAddress,
     },
   });
 

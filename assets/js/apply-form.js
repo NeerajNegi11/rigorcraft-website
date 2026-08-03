@@ -18,6 +18,15 @@
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
+    const turnstileInput = form.querySelector('[name="cf-turnstile-response"]');
+    if (!turnstileInput || !turnstileInput.value) {
+      if (statusEl) {
+        statusEl.textContent = "Please complete the verification check before submitting.";
+        statusEl.className = "form-status form-status-error";
+      }
+      return;
+    }
+
     if (button) {
       button.disabled = true;
       button.textContent = "Submitting...";
@@ -55,6 +64,9 @@
       if (button) {
         button.disabled = false;
         button.textContent = originalButtonText;
+      }
+      if (window.turnstile) {
+        window.turnstile.reset("cf-turnstile-widget");
       }
     }
   });

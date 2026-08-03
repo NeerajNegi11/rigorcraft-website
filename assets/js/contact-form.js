@@ -12,6 +12,17 @@
         message = "Estimated budget: " + form.budget.value + "\n\n" + message;
       }
 
+      const turnstileInput = form.querySelector('[name="cf-turnstile-response"]');
+      const turnstileToken = turnstileInput ? turnstileInput.value : "";
+
+      if (!turnstileToken) {
+        if (statusEl) {
+          statusEl.textContent = "Please complete the verification check before submitting.";
+          statusEl.className = "form-status form-status-error";
+        }
+        return;
+      }
+
       const payload = {
         name: form.name.value,
         email: form.email.value,
@@ -19,6 +30,7 @@
         phone: form.phone ? form.phone.value : "",
         service: form.service ? form.service.value : "",
         message: message,
+        turnstileToken: turnstileToken,
       };
 
       if (button) {
@@ -38,7 +50,8 @@
         });
 
         if (!response.ok) {
-          throw new Error("Request failed");
+          const data = await response.json().catch(() => ({}));
+          throw new Error(data.error || "Request failed");
         }
 
         form.reset();
@@ -48,13 +61,18 @@
         }
       } catch (err) {
         if (statusEl) {
-          statusEl.textContent = "Something went wrong sending your enquiry. Please try again or email us directly.";
+          statusEl.textContent = err.message === "Request failed"
+            ? "Something went wrong sending your enquiry. Please try again or email us directly."
+            : err.message;
           statusEl.className = "form-status form-status-error";
         }
       } finally {
         if (button) {
           button.disabled = false;
           button.textContent = originalButtonText;
+        }
+        if (window.turnstile) {
+          window.turnstile.reset("cf-turnstile-widget");
         }
       }
     });

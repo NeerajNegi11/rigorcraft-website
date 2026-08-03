@@ -4,6 +4,8 @@ const { uploadResume } = require("../../lib/r2");
 const { notify, escapeHtml } = require("../../lib/email");
 const { jsonResponse, handlePreflight } = require("../../lib/cors");
 const { parseMultipart, MAX_FILE_BYTES } = require("../../lib/multipart");
+const { verifyTurnstile } = require("../../lib/turnstile");
+const { getClientIp, isRateLimited } = require("../../lib/rate-limit");
 
 const ALLOWED_MIME_TYPES = new Set([
   "application/pdf",
@@ -42,6 +44,17 @@ exports.handler = async (event) => {
     return jsonResponse(event, 400, { error: "Name, email, and role are required" });
   }
 
+  const ipAddress = getClientIp(event);
+
+  const humanVerified = await verifyTurnstile(fields["cf-turnstile-response"], ipAddress);
+  if (!humanVerified) {
+    return jsonResponse(event, 400, { error: "Captcha verification failed. Please try again." });
+  }
+
+  if (await isRateLimited(prisma.applicant, ipAddress)) {
+    return jsonResponse(event, 429, { error: "Too many submissions. Please try again later." });
+  }
+
   if (fileTooLarge) {
     return jsonResponse(event, 400, { error: `Resume must be under ${MAX_FILE_BYTES / (1024 * 1024)}MB` });
   }
@@ -66,6 +79,7 @@ exports.handler = async (event) => {
       note: note || null,
       resumeKey,
       resumeName: file.filename,
+      ipAddress,
     },
   });
 

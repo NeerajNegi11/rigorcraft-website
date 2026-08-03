@@ -16,7 +16,10 @@ model Lead {
   phone     String?
   service   String?
   message   String
+  ipAddress String?
   createdAt DateTime @default(now())
+
+  @@index([ipAddress, createdAt])
 }
 
 model Applicant {
@@ -27,5 +30,8 @@ model Applicant {
   resumeKey  String
   resumeName String
   note       String?
+  ipAddress  String?
   createdAt  DateTime @default(now())
+
+  @@index([ipAddress, createdAt])
 }

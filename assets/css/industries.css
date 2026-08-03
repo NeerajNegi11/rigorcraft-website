@@ -1,0 +1,98 @@
+/* ==========================================
+   Industries Hero Section
+========================================== */
+
+.industries-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 170px 0 100px;
+    background: linear-gradient(180deg, #ffffff, #eef6ff);
+}
+
+.industries-hero::before {
+    content: "";
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, .08);
+    position: absolute;
+    top: -120px;
+    right: -120px;
+}
+
+.industries-hero h1 {
+    margin: 20px 0;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.industries-hero p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #64748b;
+    max-width: 640px;
+}
+
+@media (max-width: 768px) {
+
+    .industries-hero {
+        padding: 130px 0 70px;
+        text-align: center;
+    }
+
+    .industries-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .industries-hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* ==========================================
+   Industry Cards (reuses .service-card / .service-icon)
+========================================== */
+
+.industry-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.industry-card ul li {
+    color: #64748B;
+    padding-left: 26px;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.industry-card ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #16A34A;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 13px;
+}
+
+/* ==========================================
+   Approach Steps (reuses .process-card)
+========================================== */
+
+.industries-note {
+    background: #F8FAFC;
+    border-radius: 20px;
+    padding: 30px 35px;
+    border: 1px solid #E2E8F0;
+}
+
+.industries-note i {
+    color: #2563EB;
+    font-size: 22px;
+    margin-right: 12px;
+}

@@ -62,7 +62,7 @@ ALLOWED_ORIGINS=https://neerajnegi11.github.io,http://localhost:8080
 2. In Netlify, "Add new site → Import an existing project", point it at this repo, and set:
    - **Base directory**: `backend`
    - **Build command**: `npm run prisma:generate`
-   - **Publish directory**: `backend/public`
+   - **Publish directory**: `public` (relative to the base directory, not the repo root)
 3. Add all the variables from `.env.example` under Site settings → Environment variables.
 4. Deploy. Note the resulting site URL, e.g. `https://rigorworks-backend.netlify.app`.
 

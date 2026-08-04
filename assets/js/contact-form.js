@@ -72,7 +72,7 @@
           button.textContent = originalButtonText;
         }
         if (window.turnstile) {
-          window.turnstile.reset("cf-turnstile-widget");
+          window.turnstile.reset("#cf-turnstile-widget");
         }
       }
     });

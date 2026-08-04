@@ -4,4 +4,4 @@ window.RIGORWORKS_API_BASE = "https://rigorworks-backend.netlify.app/.netlify/fu
 
 // Cloudflare Turnstile site key (public). Update once the widget is created
 // in the Cloudflare dashboard — see backend/README.md.
-window.RIGORWORKS_TURNSTILE_SITE_KEY = "0x4AAAAAAAEFdKZUtW5uTmeFY";
+window.RIGORWORKS_TURNSTILE_SITE_KEY = "0x4AAAAAAEFdKZUtW5uTmeFY";

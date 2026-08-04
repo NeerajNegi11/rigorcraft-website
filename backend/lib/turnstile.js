@@ -1,4 +1,4 @@
-const VERIFY_URL = "https://challenge.cloudflare.com/turnstile/v0/siteverify";
+const VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
 async function verifyTurnstile(token, remoteIp) {
   if (!token) return false;

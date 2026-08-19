@@ -43,7 +43,7 @@
       }
 
       try {
-        const response = await fetch(window.RIGORWORKS_API_BASE + "/contact", {
+        const response = await fetch(window.RIGORCRAFT_API_BASE + "/contact", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),

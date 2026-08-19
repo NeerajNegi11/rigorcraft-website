@@ -71,7 +71,7 @@ ALLOWED_ORIGINS=https://neerajnegi11.github.io,http://localhost:8080
 Update [`assets/js/config.js`](../assets/js/config.js) in the site root with the deployed URL:
 
 ```js
-window.RIGORWORKS_API_BASE = "https://rigorworks-backend.netlify.app/.netlify/functions";
+window.RIGORCRAFT_API_BASE = "https://rigorworks-backend.netlify.app/.netlify/functions";
 ```
 
 Then visit `/admin/login.html` on the frontend to log in and view submissions.

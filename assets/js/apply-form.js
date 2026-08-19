@@ -37,7 +37,7 @@
     }
 
     try {
-      const response = await fetch(window.RIGORWORKS_API_BASE + "/apply", {
+      const response = await fetch(window.RIGORCRAFT_API_BASE + "/apply", {
         method: "POST",
         body: new FormData(form),
       });
@@ -56,7 +56,7 @@
     } catch (err) {
       if (statusEl) {
         statusEl.textContent = err.message === "Request failed"
-          ? "Something went wrong submitting your application. Please try again or email careers@rigorworks.com."
+          ? "Something went wrong submitting your application. Please try again or email careers@rigorcraft.com."
           : err.message;
         statusEl.className = "form-status form-status-error";
       }

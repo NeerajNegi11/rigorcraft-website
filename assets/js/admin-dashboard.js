@@ -26,7 +26,7 @@
   });
 
   async function authedFetch(path) {
-    const response = await fetch(window.RIGORWORKS_API_BASE + path, {
+    const response = await fetch(window.RIGORCRAFT_API_BASE + path, {
       headers: { Authorization: "Bearer " + token },
     });
 
